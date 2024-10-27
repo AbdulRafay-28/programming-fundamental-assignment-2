@@ -1,0 +1,128 @@
+#include <stdio.h> 
+#include <conio.h>
+void main() {
+    int number;
+
+    printf("Please enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number); 
+    } else {
+        printf("%d is odd.\n", number);  
+    }
+    
+    printf("Press any key to continue ...");
+    getchar();
+    
+    getch();
+} 2nd Wala
+
+
+
+#include <stdio.h> 
+#include <conio.h>
+void main () {
+    int age;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age >=18) {
+        printf("You are eligible to vote.\n");
+    } else {
+        printf("You are not eligible to vote.\n");
+    }
+    getch();
+
+} 3rd wala
+
+
+
+#include <stdio.h>
+#include <conio.h>
+int main() {
+    
+    int num1, num2, num3;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    int largest;
+
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            largest = num1;
+        } else {
+            largest = num3; 
+        }
+    } else {
+        if (num2 >= num3) {
+            largest = num2; 
+        } else {
+            largest = num3; 
+        }
+    }
+
+    
+    printf("The largest number is: %d\n", largest);
+
+    getch();
+} 4th wala
+
+
+
+#include<stdio.h>
+#include<conio.h>
+
+int main ()
+{
+float celcius=5,fahrenheit;
+fahrenheit = (celcius * 9/5) + 32;
+printf("%f celcius = %f fahrenheit",celcius, fahrenheit);
+getch();
+}
+#include <stdio.h>
+#include <conio.h>
+int main() { 
+float fahrenheit, celsius;
+printf("the temperature in Fahrenheit is 60: ");
+scanf("%f", &fahrenheit);
+
+celsius = (fahrenheit - 32) * 5 / 9;
+
+printf("Temperature in Celsius: %.2f\n", celsius);
+
+getch();
+} 5th wala 
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    float totalAmount, finalAmount;
+    float discount;
+
+    printf("Enter the total shopping amount: ");
+    scanf("%f", &totalAmount);
+
+    if (totalAmount > 5000) {
+        discount = 0.20; 
+    } else if (totalAmount >= 3000) {
+        discount = 0.10; 
+    } else {
+        discount = 0.0; 
+    }
+
+    finalAmount = totalAmount - (totalAmount * discount);
+
+    printf("Final amount after discount: %.2f\n", finalAmount);
+
+    getch();
+} 7th wala
+
+
+
